@@ -2,8 +2,8 @@
 
 ## Contents
 
--   Introduction\
--   Deliverable\
+-   Introduction
+-   Deliverable
 -   Functions I Implemented
 
 ------------------------------------------------------------------------
@@ -59,11 +59,11 @@ cards are randomized each time the game starts.
 ### 4. `createCards(parentElement, shuffledImageClasses)`
 
 Generates all 12 cards, attaches them to the DOM, assigns each a
-shuffled image class, and stores them as custom card objects.\
+shuffled image class, and stores them as custom card objects.
 Each card object contains:
 
--   `index` → position in the loop\
--   `element` → the actual DOM element\
+-   `index` → position in the loop
+-   `element` → the actual DOM element
 -   `imageClass` → the image class applied
 
 This made it easy to track cards in the JavaScript logic.
@@ -89,12 +89,12 @@ counter changed.
 
 Handles the main game logic whenever a card is flipped:
 
--   Increments the flip counter.\
--   If it's the first card, it stores it.\
+-   Increments the flip counter.
+-   If it's the first card, it stores it.
 -   If it's the second card, it checks for a match:
-    -   If they don't match, both cards flip back.\
+    -   If they don't match, both cards flip back.
     -   If they do match, the match counter goes up, and a sound effect
-        plays.\
+        plays.
 -   If all matches are found, a win sound plays.
 
 ------------------------------------------------------------------------
